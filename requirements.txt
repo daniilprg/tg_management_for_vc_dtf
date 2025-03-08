@@ -1,0 +1,6 @@
+aiogram
+openpyxl
+requests
+openai
+beautifulsoup4
+paramiko

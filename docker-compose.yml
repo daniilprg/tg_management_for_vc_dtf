@@ -1,0 +1,15 @@
+services:
+  bot:
+    container_name: tg-bot
+    build: .
+    volumes:
+      - bot_assets:/app/bot/assets
+      - bot_db:/app/bot/databases/db  
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on: []
+
+volumes:
+  bot_assets:
+  bot_db:
